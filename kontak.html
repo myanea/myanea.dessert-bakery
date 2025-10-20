@@ -1,30 +1,131 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
- <title>Kontak</title>
+  <meta charset="UTF-8">
+  <title>Kontak</title>
+  <style>
+    body {
+      background-color: aliceblue;
+      font-family: serif;
+      margin: 0;
+      padding: 40px;
+      text-align: center;
+      color: black;
+    }
+
+    h1 {
+      color: purple;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: darkviolet;
+      font-size: 28px;
+      margin-top: 40px;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 5px 0;
+    }
+
+    form {
+      background-color: #f3e8ff;
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-family: serif;
+      font-size: 16px;
+    }
+
+    textarea {
+      height: 100px;
+      resize: vertical;
+    }
+
+    input[type="submit"] {
+      background-color: darkviolet;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: purple;
+    }
+
+    nav {
+      margin-top: 40px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: black;
+      font-size: 18px;
+      margin: 0 15px;
+      padding: 10px 15px;
+      border-radius: 6px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: darkviolet;
+      color: white;
+    }
+  </style>
 </head>
-<body bgcolor=aliceblue>
-<font face=serif color=purple size=4>
- <center><h1>Hubungi Kami</h1></center>
-<font face=serif color=black size=4>
- <p>Alamat: Jl. Merdeka No. 45, Wonosobo</p>
- <p>Telepon: 0812-5432-4567</p>
- <p>Email: myanea@gmail.com</p>
-<font face=serif color=purple size=4>
- <center><h2>Form Pemesanan / Kritik & Saran</h2></center>
-<font face=serif color=black size=4>
- <form>
- Nama: <input type="text" name="nama"><br><br>
- Email: <input type="email" name="email"><br><br>
- Pesan: <textarea name="pesan"></textarea><br><br>
- <input type="submit" value="Kirim">
- </form>
- <nav>
-<font face=serif color=black size=2>
- <center><a href="index.html">Beranda</a></center>
- <center><a href="tentang.html">Tentang Kami</a></center> 
-  <center><a href="produk.html">Produk</a></center>
-  <center><a href="kontak.html">Kontak</a></center>
- </nav>
+<body>
+
+  <h1>Hubungi Kami</h1>
+
+  <p><strong>Alamat:</strong> Jl. Merdeka No. 45, Wonosobo</p>
+  <p><strong>Telepon:</strong> 0812-5432-4567</p>
+  <p><strong>Email:</strong> myanea@gmail.com</p>
+
+  <h2>Form Pemesanan / Kritik & Saran</h2>
+
+  <form>
+    <label for="nama">Nama:</label>
+    <input type="text" id="nama" name="nama" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="pesan">Pesan:</label>
+    <textarea id="pesan" name="pesan" required></textarea>
+
+    <input type="submit" value="Kirim">
+  </form>
+
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="tentang.html">Tentang Kami</a>
+    <a href="produk.html">Produk</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+
 </body>
 </html>
