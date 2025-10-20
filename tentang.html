@@ -17,29 +17,28 @@
       color: purple;
       font-size: 42px;
       font-family: serif;
-      margin-bottom: 20px;
-    }
-
-    .banner {
-      width: 100%;
-      max-width: 800px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
       margin-bottom: 30px;
     }
 
     .intro {
+      background-color: #f5e9ff;
       font-family: cursive;
       color: darkviolet;
       font-size: 24px;
-      margin-bottom: 30px;
+      padding: 30px 20px;
+      margin: 20px auto 30px;
+      border-radius: 10px;
+      max-width: 800px;
     }
 
     .visi, .misi {
+      background-color: #f3e8ff;
       font-family: serif;
       font-size: 20px;
-      margin: 10px auto;
-      max-width: 700px;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      border-radius: 10px;
     }
 
     .timeline {
@@ -75,10 +74,7 @@
       max-width: 600px;
       font-style: italic;
       color: #333;
-    }
-
-    .testimonial p {
-      margin: 0;
+      border-radius: 8px;
     }
 
     .testimonial .author {
@@ -111,14 +107,20 @@
 <body>
 
   <h1>Tentang Kami</h1>
-  <img src="about-banner.jpg" alt="Tentang Myanea" class="banner">
 
-  <p class="intro">
+  <div class="intro">
     Myanea berdiri untuk menghadirkan kebahagiaan lewat dessert dan bakery manis sejak hari pertama.
-  </p>
+  </div>
 
-  <p class="visi"><strong>Visi:</strong> Menjadi pilihan utama bagi pecinta dessert yang mengutamakan kualitas dan kehangatan.</p>
-  <p class="misi"><strong>Misi:</strong> Membuat setiap dessert dengan cinta, menyajikan pengalaman manis, dan menciptakan momen cozy untuk setiap pelanggan.</p>
+  <div class="visi">
+    <strong>Visi:</strong><br>
+    Menjadi pilihan utama bagi pecinta dessert yang mengutamakan kualitas dan kehangatan.
+  </div>
+
+  <div class="misi">
+    <strong>Misi:</strong><br>
+    Membuat setiap dessert dengan cinta, menyajikan pengalaman manis, dan menciptakan momen cozy untuk setiap pelanggan.
+  </div>
 
   <div class="timeline">
     <h2>Sejarah Kami</h2>
