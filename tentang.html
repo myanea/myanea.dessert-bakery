@@ -1,22 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
- <title>Tentang Kami</title>
+  <meta charset="UTF-8">
+  <title>Tentang Kami</title>
+  <style>
+    body {
+      background-color: aliceblue;
+      font-family: serif;
+      margin: 0;
+      padding: 40px;
+      text-align: center;
+      color: black;
+    }
+
+    h1 {
+      color: purple;
+      font-size: 42px;
+      font-family: serif;
+      margin-bottom: 20px;
+    }
+
+    .banner {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      margin-bottom: 30px;
+    }
+
+    .intro {
+      font-family: cursive;
+      color: darkviolet;
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    .visi, .misi {
+      font-family: serif;
+      font-size: 20px;
+      margin: 10px auto;
+      max-width: 700px;
+    }
+
+    .timeline {
+      margin-top: 40px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+
+    .timeline h2 {
+      color: darkviolet;
+      font-size: 26px;
+      border-bottom: 2px solid purple;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+
+    .timeline ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .timeline li {
+      margin-bottom: 15px;
+    }
+
+    .testimonial {
+      background-color: #f6efff;
+      padding: 20px;
+      margin: 40px auto;
+      border-left: 6px solid darkviolet;
+      max-width: 600px;
+      font-style: italic;
+      color: #333;
+    }
+
+    .testimonial p {
+      margin: 0;
+    }
+
+    .testimonial .author {
+      margin-top: 10px;
+      font-weight: bold;
+      color: darkviolet;
+    }
+
+    nav {
+      margin-top: 40px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: black;
+      font-size: 18px;
+      font-family: serif;
+      margin: 0 15px;
+      padding: 10px 15px;
+      border-radius: 6px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: darkviolet;
+      color: white;
+    }
+  </style>
 </head>
-<body bgcolor=aliceblue>
-<font face=serif color=purple size=6>
- <h1><center>Tentang Kami</center></h1>
-<font face=cursive color=darkviolet size=8>
- <p><center>Myanea berdiri untuk menghadirkan kebahagiaan lewat dessert dan bakery manis sejak hari pertama.</center></p>
-<font face=serif color=black size=6>
- <p><center>Visi: Menjadi pilihan utama bagi pecinta dessert yang mengutamakan kualitas dan kehangatan.</center></p>
- <p><center>Misi: Membuat setiap dessert dengan cinta, menyajikan pengalaman manis, dan menciptakan momen cozy untuk setiap pelanggan.</center></p>
- <nav>
-<font face=serif color=black size=4>
- <center><a href="index.html">Beranda</a></center>
- <center><a href="tentang.html">Tentang Kami</a></center>
- <center><a href="produk.html">Produk</a></center>
- <center><a href="kontak.html">Kontak</a></center>
- </nav>
+<body>
+
+  <h1>Tentang Kami</h1>
+  <img src="about-banner.jpg" alt="Tentang Myanea" class="banner">
+
+  <p class="intro">
+    Myanea berdiri untuk menghadirkan kebahagiaan lewat dessert dan bakery manis sejak hari pertama.
+  </p>
+
+  <p class="visi"><strong>Visi:</strong> Menjadi pilihan utama bagi pecinta dessert yang mengutamakan kualitas dan kehangatan.</p>
+  <p class="misi"><strong>Misi:</strong> Membuat setiap dessert dengan cinta, menyajikan pengalaman manis, dan menciptakan momen cozy untuk setiap pelanggan.</p>
+
+  <div class="timeline">
+    <h2>Sejarah Kami</h2>
+    <ul>
+      <li><strong>2020:</strong> Myanea lahir dari dapur kecil di rumah founder kami.</li>
+      <li><strong>2021:</strong> Resep eksklusif cupcakes viral di media sosial.</li>
+      <li><strong>2022:</strong> Membuka toko fisik pertama di Bandung.</li>
+      <li><strong>2023:</strong> Mulai ekspansi dengan layanan pemesanan online & pengiriman nasional.</li>
+      <li><strong>2024:</strong> Menjadi salah satu brand dessert rumahan paling dicari di Indonesia.</li>
+    </ul>
+  </div>
+
+  <div class="testimonial">
+    <p>"Setiap kali aku cicipi cookies dari Myanea, rasanya seperti kembali ke masa kecil. Lembut, manis, dan penuh cinta!"</p>
+    <div class="author">— Arini, pelanggan setia sejak 2021</div>
+  </div>
+
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="tentang.html">Tentang Kami</a>
+    <a href="produk.html">Produk</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+
 </body>
 </html>
