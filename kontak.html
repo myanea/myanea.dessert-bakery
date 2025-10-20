@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <title>Myanea - Kontak</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&family=Pacifico&display=swap" rel="stylesheet" />
   <style>
     body {
       background-color: aliceblue;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 40px auto;
       max-width: 700px;
       padding: 0 20px 60px;
@@ -28,6 +28,10 @@
     h2 {
       font-size: 36px;
       margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
     }
     .contact-info {
       background: #e6d6fa; /* soft ungu */
@@ -41,45 +45,60 @@
     }
     form {
       background: #f3e8ff;
-      padding: 25px 30px;
+      padding: 30px 30px 35px;
       margin-top: 20px;
       border-radius: 16px;
-      box-shadow: 0 3px 10px rgba(106, 13, 173, 0.1);
+      box-shadow: 0 4px 15px rgba(106, 13, 173, 0.15);
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 22px;
       font-size: 18px;
       color: #4b0082;
+      transition: box-shadow 0.3s ease-in-out;
+    }
+    form:hover {
+      box-shadow: 0 8px 30px rgba(106, 13, 173, 0.35);
     }
     label {
-      font-weight: 600;
+      font-weight: 700;
+      margin-bottom: 6px;
     }
     input[type="text"],
     input[type="email"],
     textarea {
-      padding: 10px;
-      border: 2px solid #a88fde;
-      border-radius: 10px;
+      padding: 14px 18px;
+      border: 2.5px solid #a88fde;
+      border-radius: 12px;
       font-size: 16px;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       resize: vertical;
+      transition: border-color 0.3s ease;
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #6a0dad;
+      box-shadow: 0 0 8px rgba(106, 13, 173, 0.5);
     }
     textarea {
-      min-height: 100px;
+      min-height: 120px;
     }
     input[type="submit"] {
-      background-color: #6a0dad;
+      background: linear-gradient(135deg, #7d3c98, #b287ce);
       color: white;
       border: none;
-      padding: 12px;
-      font-size: 18px;
-      border-radius: 12px;
+      padding: 16px 0;
+      font-size: 20px;
+      font-weight: 800;
+      border-radius: 20px;
       cursor: pointer;
-      font-weight: 700;
-      transition: background-color 0.3s;
+      box-shadow: 0 4px 15px rgba(125, 60, 152, 0.6);
+      transition: background 0.4s ease, box-shadow 0.4s ease;
     }
     input[type="submit"]:hover {
-      background-color: #520b9c;
+      background: linear-gradient(135deg, #9e58c6, #d1a6f0);
+      box-shadow: 0 6px 20px rgba(159, 86, 198, 0.8);
     }
     nav {
       margin-top: auto;
@@ -89,6 +108,7 @@
       border-radius: 0 0 20px 20px;
       box-shadow: inset 0 1px 3px rgba(106, 13, 173, 0.15);
       font-weight: 600;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     nav a {
       font-weight: 600;
@@ -136,19 +156,19 @@
     <p><strong>Email:</strong> myanea@gmail.com</p>
   </section>
 
-  <h2>Form Pemesanan / Kritik & Saran</h2>
+  <h2>🎉 Form Pemesanan / Kritik & Saran</h2>
 
   <form>
     <label for="nama">Nama:</label>
-    <input type="text" id="nama" name="nama" required>
+    <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
 
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+    <input type="email" id="email" name="email" placeholder="contoh@email.com" required>
 
     <label for="pesan">Pesan:</label>
-    <textarea id="pesan" name="pesan" required></textarea>
+    <textarea id="pesan" name="pesan" placeholder="Tulis pesan, kritik, atau saran di sini..." required></textarea>
 
-    <input type="submit" value="Kirim">
+    <input type="submit" value="Kirim Pesan">
   </form>
 
   <nav>
@@ -160,4 +180,3 @@
 
 </body>
 </html>
-
